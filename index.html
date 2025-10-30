@@ -31,6 +31,43 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
     </style>
+    <!-- STYLE SECTION -->
+<style>
+    header#vanta-bg {
+        background: url("images/Pavia2.jpg") no-repeat center center/cover;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    header#vanta-bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); /* Adds a soft overlay for readability */
+    }
+
+    header#vanta-bg h1,
+    header#vanta-bg p {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+<!-- HERO SECTION -->
+<header id="vanta-bg">
+    <div>
+        <h1 class="text-5xl font-bold mb-4">Exploring the Walls of Pavia</h1>
+        <p class="text-lg max-w-2xl mx-auto">
+            A journey through history, architecture, and cultural heritage of Lombardy’s fortified cities.
+        </p>
+    </div>
+</header>
+
 </head>
 <body class="bg-gray-100 font-sans antialiased">
     <!-- Navigation -->
@@ -320,4 +357,5 @@
     </script>
 </body>
 </html>
+
 
